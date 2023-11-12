@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import App from './part1/App';
+import Part1C from "./part1/Part1C";
+import Part1Counter from "./part1/Part1Counter";
+import Part1State from "./part1/Part1State";
+import Counter from "./part1/Counter";
+import CounterPlus from "./part1/CounterPlus";
+import UniCaft from "./part1/UniCaft";
+import Anecdotes from "./part1/Anecdotes";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+let counter = 1;
+
+ReactDOM.createRoot(document.getElementById('root')).render(<Anecdotes />)
+
