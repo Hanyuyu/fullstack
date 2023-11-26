@@ -1,0 +1,122 @@
+h2 {
+    color: blueviolet;
+    font-style: italic;
+}
+
+.note-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.note {
+    background: #f4f4f4;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.note:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.note-important {
+    font-weight: bold;
+    border-left: 4px solid #ffcc00;
+    background: #fffbea;
+}
+
+.note button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    float: right; /* 将按钮浮动到右边 */
+}
+
+.note button:hover {
+    background: #0056b3;
+}
+
+.note-content {
+    margin-right: 50px; /* 为按钮留出空间 */
+}
+
+
+
+/*.success {*/
+/*    animation: slideIn 0.5s ease-out forwards; !* 应用动画 *!*/
+/*}*/
+
+/* 基本通知样式 */
+.notification {
+    position: fixed;
+    top: 10px;
+    right: -300px;
+    width: 280px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: white;
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        right: -300px;
+    }
+    to {
+        right: 10px;
+    }
+}
+
+/* 错误通知样式 */
+.error {
+    background: linear-gradient(135deg, #ff5858, #f09819);
+    color: white; /* 白色文本 */
+    font-size: 22px; /* 增大字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    border: none; /* 移除边框 */
+    border-radius: 10px; /* 圆角 */
+    padding: 15px 20px; /* 增加内边距 */
+    margin-bottom: 15px; /* 增加底部外边距 */
+    box-shadow: 0 10px 20px -5px rgba(255, 87, 87, 0.7); /* 深红色阴影 */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* 文本阴影 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 过渡效果 */
+    display: inline-block; /* 使元素不占满全宽 */
+    /* 其他错误特定样式 */
+}
+
+.error:hover {
+    transform: translateY(-5px); /* 鼠标悬浮时轻微向上移动 */
+    box-shadow: 0 15px 30px -5px rgba(255, 87, 87, 0.8); /* 增加阴影 */
+}
+
+/* 成功通知样式 */
+.success {
+    color: white; /* 白色文本 */
+    background: linear-gradient(135deg, #28a745, #218838); /* 对角线渐变背景，从浅绿色到深绿色 */
+    font-size: 22px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    border: none; /* 无边框 */
+    border-radius: 10px; /* 圆角 */
+    padding: 15px 20px; /* 内边距 */
+    margin-bottom: 15px; /* 底部外边距 */
+    box-shadow: 0 10px 20px -5px rgba(40, 167, 69, 0.7); /* 绿色阴影 */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* 文本阴影 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 过渡效果 */
+    display: inline-block; /* 行内块布局 */
+}
+
+.success:hover {
+    transform: translateY(-5px); /* 鼠标悬浮时上移 */
+    box-shadow: 0 15px 30px -5px rgba(40, 167, 69, 0.8); /* 增加阴影 */
+}
+
+

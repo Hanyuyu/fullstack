@@ -11,8 +11,16 @@ import UniCaft from "./part1/UniCaft";
 import Anecdotes from "./part1/Anecdotes";
 import Note from "./part2/Note";
 import Course from "./part2/part2-a/Course";
+import PhoneBook from "./part2/PhoneBook";
+import axios from "axios";
+import Contries from "./part2/Contries";
+import './index.css'
 
-let counter = 1;
+// axios.get("https://restcountries.com/v3.1/all")
+//     .then(res => {
+//         console.log(res.data)
+//         console.log(res.data.length)
+//     });
 
-ReactDOM.createRoot(document.getElementById('root')).render(<Course />)
+ReactDOM.createRoot(document.getElementById('root')).render(<Note />)
 
